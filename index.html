@@ -8,8 +8,8 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
 body {
-  background-image: url("./background.jpg");
-  background-repeat: no-repeat;
+  background-image: url("./Photos/white.png");
+  background-repeat: repeat;
   background-attachment: fixed;
 }
 </style>
@@ -21,7 +21,7 @@ body {
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src='./profilepic.jpg' style="width:100%;" class="w3-round"><br><br> <!--Put your photo here-->
+    <img src='./Photos/profilepic.jpg' style="width:100%;" class="w3-round"><br><br> <!--Put your photo here-->
     <h2><b>Ryan Miyahara</b></h2>
     <p class="w3-text-white">University of California, Los Angeles Computer Science B.S., 2019</p>
   </div>
@@ -45,11 +45,11 @@ body {
 
 <!-- Images of Me -->
 <head>
-  <a href="#"><img src="./typing.jpg" style="width:100px;" class="w3-right w3-margin w3-hide-large"></a>
+  <a href="#"><img src="./Photos/Banners/typing.jpg" style="width:100px;" class="w3-right w3-margin w3-hide-large"></a>
   <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
 <div class="w3-row-padding " id="about">
   <div>
-    <img src="./typing.jpg" alt="Me" style="width:102%">
+    <img src="./Photos/Banners/typing.jpg" alt="Me" style="width:102%">
 
 <div class="w3-container w3-padding-large w3-white" style="margin-bottom:0px; width: 102%">
   <p>
@@ -146,57 +146,104 @@ body {
   </div>
 
   <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-grey" style = "width: 102%">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="./proxy.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+  <div class="w3-row-padding w3-white" style = "width: 100%">
+    <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity portfolio-border" onclick = "document.getElementById('do_not_disturb').style.display='block'">
+      <img src="./Photos/Portfolio/proxy.jpg" alt="Do not disturb icon" style="width:100%">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Do Not Disturb</b></p>
+        <p>An Android application that allows roommates to communicate privacy through the use of a simple UI.</p>
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="./proxy.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity portfolio-border" onclick = "document.getElementById('no_duines').style.display='block'">
+      <img src="./Photos/Portfolio/noduines.png" alt="Smash and Arduino" style="width:100%">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>No Duines</b></p>
+        <p>Combining the technically demanding mechanics of Super Smash Bros. Melee with the power of an Arduino!</p>
       </div>
     </div>
-    <div class="w3-third w3-container">
-      <img src="./proxy.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity portfolio-border" onclick = "document.getElementById('ice_man').style.display='block'">
+      <img src="./Photos/Portfolio/proxy.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Ice Man</b></p>
+        <p>A desktop game which implements extensive use of object-oriented programming's class inheritance.</p>
       </div>
+    </div>
+  </div>
+
+  <!-- Windows that display when first grid is clicked-->
+  <div id="do_not_disturb" class="w3-modal w3-border-cyan"  onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-display-topright" onclick="this.style.display='none'" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-padding-64 portfolio-border">
+      <h2 class="w3-center">Do Not Disturb</h2>
+      <p class="w3-center"><img src="img/p2.png" style="width:450px;height:260px;" class="w3-image img-responsive w3-center"></p>
+
+      <p class="w3-center">August 2018 - Present</p>
+      <p>[REPORT]</p>
+    </div>
+  </div>
+  <div id="no_duines" class="w3-modal"  onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-display-topright" onclick="this.style.display='none'" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-padding-64 portfolio-border">
+      <h2 class="w3-center">No Duines</h2>
+      <p class="w3-center"><img src="./Photos/Portfolio/noduines.png" style="width:450px;height:450px;" class="w3-image img-responsive w3-center"></p>
+
+      <p class="w3-center">February 2018 - March 2018</p>
+      <p>[REPORT]</p>
+    </div>
+  </div>
+  <div id="ice_man" class="w3-modal"  onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-display-topright" onclick="this.style.display='none'" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-padding-64 portfolio-border">
+      <h2 class="w3-center">Ice Man</h2>
+      <p class="w3-center"><img src="./Photos/Portfolio/proxy.jpg" style="width:450px;height:450px;" class="w3-image img-responsive w3-center"></p>
+
+      <p class="w3-center">July 2017 - August 2017</p>
+      <p>[REPORT]</p>
     </div>
   </div>
 
   <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-grey" style = "width: 102%">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="./proxy.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+  <div class="w3-row-padding w3-white" style = "width: 100%">
+    <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity portfolio-border" onclick = "document.getElementById('health_tracker').style.display='block'">
+      <img src="./Photos/Portfolio/proxy.jpg" alt="Norway" style="width:100%">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Health Tracker</b></p>
+        <p>An Android application which utilizes machine learning to track and predict eating habits on The Hill at UCLA.</p>
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="./proxy.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity portfolio-border" onclick = "document.getElementById('birthday_tracker').style.display='block'">
+      <img src="./Photos/Portfolio/proxy.jpg" alt="Norway" style="width:100%">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="./proxy.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Birthday Tracker</b></p>
+        <p>A short Python script which reminds the user which of their friend's birthdays are today or coming soon.</p>
       </div>
     </div>
   </div>
 
+  <!-- Windows that display when second grid is clicked-->
+  <div id="health_tracker" class="w3-modal"  onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-display-topright" onclick="this.style.display='none'" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-padding-64 portfolio-border">
+      <h2 class="w3-center">Health Tracker</h2>
+      <p class="w3-center"><img src="img/p2.png" style="width:450px;height:260px;" class="w3-image img-responsive w3-center"></p>
+
+      <p class="w3-center">November 2017</p>
+      <p>[REPORT]</p>
+    </div>
+  </div>
+  <div id="birthday_tracker" class="w3-modal"  onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-display-topright" onclick="this.style.display='none'" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-padding-64 portfolio-border">
+      <h2 class="w3-center">Birthday Tracker</h2>
+      <p class="w3-center"><img src="noduines.png" style="width:450px;height:450px;" class="w3-image img-responsive w3-center"></p>
+
+      <p class="w3-center">January 2018 - February 2018</p>
+      <p>[REPORT]</p>
+    </div>
+  </div>
+
   <!-- Contact Section -->
-  <img src="./contact.jpg" alt="Me" style="width:102%">
+  <img src="./Photos/Banners/contact.jpg" alt="Me" style="width:102%">
   <div class="w3-row-padding w3-center " style="margin:0 -16px">
     <a href = "https://mail.google.com/mail/?view=cm&fs=1&to=rmiyahara144@gmail.com" target = "_blank">
       <div class="w3-third w3-dark-grey w3-hover-opacity">
@@ -204,10 +251,20 @@ body {
         <p>rmiyahara144@gmail.com</p>
       </div>
     </a>
-    <div class="w3-third w3-grey">
+
+    <div class="w3-third w3-grey w3-hover-opacity" onclick = "copyToClipboard()">
       <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
       <p>(408)528-5455</p>
+      <script>
+        function copyToClipboard() {
+          var phone = 4085285455;
+          phone.select();
+          document.execCommand("copy");
+          alert("Phone number has been copied to clipboard!");
+        }
+      </script>
     </div>
+
     <a href = "./Resume.pdf" download target = "_blank">
       <div class = "w3-third w3-teal w3-hover-opacity">
         <p><i class = "fa fa-download w3-xxlarge w3-text-white"></i></p>
