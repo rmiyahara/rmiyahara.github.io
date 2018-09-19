@@ -148,10 +148,10 @@ body {
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-white" style = "width: 100%">
     <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity portfolio-border" onclick = "document.getElementById('do_not_disturb').style.display='block'">
-      <img src="./Photos/Portfolio/proxy.jpg" alt="Do not disturb icon" style="width:100%">
+      <img src="./Photos/Portfolio/android.png" alt="Do not disturb icon" style="width:100%">
       <div class="w3-container w3-white">
         <p><b>Do Not Disturb</b></p>
-        <p>An Android application that allows roommates to communicate privacy through the use of a simple UI.</p>
+        <p>An Android application that allows roommates to communicate through the use of a simple UI.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity portfolio-border" onclick = "document.getElementById('no_duines').style.display='block'">
@@ -175,10 +175,20 @@ body {
     <span class="w3-button w3-large w3-display-topright" onclick="this.style.display='none'" title="Close Modal Image"><i class="fa fa-remove"></i></span>
     <div class="w3-modal-content w3-animate-zoom w3-padding-64 portfolio-border">
       <h2 class="w3-center">Do Not Disturb <i class="fa fa-github w3-hover-opacity" onclick="window.location.href='https://github.com/rmiyahara/DoNotDisturb'"></i></h2>
-      <p class="w3-center"><img src="img/p2.png" style="width:450px;height:260px;" class="w3-image img-responsive w3-center"></p>
+      <p class="w3-center"><img src="./Photos/Portfolio/android.png" style="width:450px;height:450px;" class="w3-image img-responsive w3-center"></p>
 
       <p class="w3-center">August 2018 - Present</p>
-      <p class = "w3-padding">[REPORT]</p>
+      <p class = "w3-padding">Technology Used: ReactNative, Android Studio, Java, HTML</p>
+      <p class = "w3-padding">As a student at UCLA where nearly everyone has a roommate or two, I noticed a major problem when it came to roommate communication. Often times, 
+        issues would stem from having overnight guests over. Communicating this can be uncomfortable for some, but when it isn't communicated at all, awkward walk-ins are bound to 
+        happen. The goal of this application is to provide roommates with a discrete way to tell their roommates when the room is occupied and when they are free to come back in.
+      </p>
+      <p class = "w3-padding">This is implemented by using a simple homescreen highlighting one button which starts a timer and sends a push notification to connected roommates. 
+        The timer length is agreed upon by all roommates beforehand and will notify roommates with another push notification when the timer reaches zero. Roommates can easily be 
+        added in the "Roommates" tab on the left and various settings, such as timer length, can be toggled in the "Settings" tab.
+      </p>
+      <p class = "w3-padding">Development for this application is currently ongoing with an expected completion date by the end of the year.</p>
+      <p class = "w3-padding">The code can be found <a href = "https://github.com/rmiyahara/DoNotDisturb" target = "_blank" color = "w3-blue">here</a> or by clicking the GitHub icon at the title.</p>
     </div>
   </div>
   <div id="no_duines" class="w3-modal"  onclick="this.style.display='none'">
@@ -188,31 +198,60 @@ body {
       <p class="w3-center"><img src="./Photos/Portfolio/noduines.png" style="width:450px;height:450px;" class="w3-image img-responsive w3-center"></p>
 
       <p class="w3-center">February 2018 - March 2018</p>
-      <p class = "w3-padding">[REPORT]</p>
+      <p class = "w3-padding"> Technology Used: Arduino Software, C, Basic circuit reworking</p>
+      <p class = "w3-padding">Despite being more than 15 years old, Nintendo's Super Smash Bros. Melee still thrives as a game with an active fanbase. Melee had the highest viewer count during 
+        Evolution 2018, the most prestigious fighting game tournament of the year outliving all other fighting games matching its age. One of its defining factors would be its demanding 
+        techniques, something the community dubbed "Tech Skill".
+      </p>
+      <p class = "w3-padding">
+        Each of these techniques has a unique name such as Wavedashing, L-Cancelling, etc. While some of these are regularly used during competitive play, some of these techniques have an 
+        execution barrier that is too high for humans. These are discovered using tool assisted speedruns (TAS) where the game can be played out frame by frame. While the execution may be 
+        too high for humans, an Arduino has no such limits.
+      </p>
+      <p class = "w3-padding">
+        By soldering an Arduino to the motherboard of a controller, I am able to have my character perform these high-precision techniques at the push of a button. Examples of these can be 
+        seen in the video above. This modification is not meant for tournament play as it provides clear, unfair advantages. While this project is finished, I occasionally come back and add a 
+        few new macros. 
+      </p>
+      <p class = "w3-padding">The code can be found <a href = "https://github.com/rmiyahara/NoDuines" target = "_blank">here</a> or by clicking the GitHub icon at the title.</p>
     </div>
   </div>
   <div id="ice_man" class="w3-modal"  onclick="this.style.display='none'">
     <span class="w3-button w3-large w3-display-topright" onclick="this.style.display='none'" title="Close Modal Image"><i class="fa fa-remove"></i></span>
     <div class="w3-modal-content w3-animate-zoom w3-padding-64 portfolio-border">
       <h2 class="w3-center">Ice Man <i class="fa fa-github w3-hover-opacity" onclick="window.location.href='https://github.com/rmiyahara/IceMan'"></i></h2>
-      <p class="w3-center"><iframe width="700" height = "394" src="https://www.youtube.com/embed/s0MYzbPV67A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+      <p class="w3-center"><iframe width="80%" height="400" src="https://www.youtube.com/embed/s0MYzbPV67A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
 
       <p class="w3-center">July 2017 - August 2017</p>
-      <p class = "w3-padding">[Report]</p>
+      <p class = "w3-padding">Technology Used: Visual Studio, C++</p>
+      <p class = "w3-padding">
+        This was my final project for UCLA's Computer Science 32: Introduction to Computer Science II. The objective of the game is to move the Ice Man throughout the field looking for oil barrels. 
+        He will quickly dig away any ice in his path and collect various power ups as he makes contact with them. The Ice Man is not alone however; following him are protestors who are looking to 
+        end Ice Man's quest. They will eat away at Ice Man's health until he is forced to leave. In this case, the player will lost a life and start the level over. All power ups, health, and score 
+        is kept on the top of the screen.
+      </p>
+      <p class = "w3-padding">
+        This project's main obstacle was creating a useful inheritence heirarchy for the player, enemies, and power ups. I wanted to avoid rewriting code, but had to make sure everything was working 
+        properly. Once I had finilized the heirarchy, the next big issue was writing the behavior for the protestors. While some of them move randomly in straight lines, others will move towards 
+        the player if they are within a certain amount of steps away from the player (the number of steps increases with the level). On top of that, if a protestor is defeated, they must then leave 
+        the field, taking the shortest path to their spawn point. I eventually accomplished did this using an queue-based algorithm on the cleared part of the field. Overall, this project really 
+        challeneged my problem solving skills as well as my familiarity with C++.
+      </p>
+      <p class = "w3-padding">The code can be found <a href = "https://github.com/rmiyahara/IceMan" target = "_blank">here</a> or by clicking the GitHub icon at the title.</p>
     </div>
   </div>
 
   <!-- Second Photo Grid-->
   <div class="w3-row-padding w3-white" style = "width: 100%">
     <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity portfolio-border" onclick = "document.getElementById('health_tracker').style.display='block'">
-      <img src="./Photos/Portfolio/proxy.jpg" alt="Norway" style="width:100%">
+      <img src="./Photos/Portfolio/healthtracker.png" alt="Hack on the Hill 2017 logo." style="width:100%">
       <div class="w3-container w3-white">
         <p><b>Health Tracker</b></p>
         <p>An Android application which utilizes machine learning to track and predict eating habits on The Hill at UCLA.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity portfolio-border" onclick = "document.getElementById('birthday_tracker').style.display='block'">
-      <img src="./Photos/Portfolio/proxy.jpg" alt="Norway" style="width:100%">
+      <img src="./Photos/Portfolio/kyodo.jpeg" alt="Kyodo Taiko logo." style="width:100%">
       <div class="w3-container w3-white">
         <p><b>Birthday Tracker</b></p>
         <p>A short Python script which reminds the user which of their friend's birthdays are today or coming soon.</p>
@@ -225,20 +264,49 @@ body {
     <span class="w3-button w3-large w3-display-topright" onclick="this.style.display='none'" title="Close Modal Image"><i class="fa fa-remove"></i></span>
     <div class="w3-modal-content w3-animate-zoom w3-padding-64 portfolio-border">
       <h2 class="w3-center">Health Tracker <i class="fa fa-github w3-hover-opacity" onclick="window.location.href='https://github.com/lucamatsumoto/Health-Tracker'"></i></h2>
-      <p class="w3-center"><img src="img/p2.png" style="width:450px;height:260px;" class="w3-image img-responsive w3-center"></p>
+      <p class="w3-center"><img src="./Photos/Portfolio/healthtracker.png" style="width:450px;" class="w3-image img-responsive w3-center"></p>
 
       <p class="w3-center">November 2017</p>
-      <p>[REPORT]</p>
+      <p class = "w3-padding">Technology Used: Android Studio, React Native, SciKit HTML, JavaScript, Python</p>
+      <p class = "w3-padding">
+        This project was made for UCLA's Hack on the Hill. This hackathon lasted for 16 hours where teams began working on various projects. This one was my first hackathon and really 
+        opened to my eyes to taking coding beyond the classroom. This project's main objective was to use the Hill's extensive dining menu and the user's eating habits to construct 
+        a suggested diet. As the user continues to log their foods, the application could continuously suggest meals which would be healthier and more enjoyable to the user.
+      </p>
+      <p class = "w3-padding">
+        The biggest issue we ran into during our development was time. Since development was only a day long, we had to cut a few features as well as excluding certain dining halls. 
+        On top of this, we were all working with technology we had little to no experience with at the time which made everything take longer than expected. While I was working on 
+        the front-end, we eventually all had to input nutritional values manually due to the values being saved in a picture on the dining menu site. Without the time to figure out 
+        image recognition, each item on the menu had to be added by hand making this process quite tedious.
+      </p>
+      <p class = "w3-padding">
+        In the end, our team was able to present the application with limited functionality. While very stressful, the entire hackathon experience was enlightening and helped spark 
+        my love for coding.
+      </p>
+      <p class = "w3-padding">The code can be found <a href = "https://github.com/rmiyahara/Health-Tracker" target = "_blank">here</a> or by clicking the GitHub icon at the title.</p>
     </div>
   </div>
   <div id="birthday_tracker" class="w3-modal"  onclick="this.style.display='none'">
     <span class="w3-button w3-large w3-display-topright" onclick="this.style.display='none'" title="Close Modal Image"><i class="fa fa-remove"></i></span>
     <div class="w3-modal-content w3-animate-zoom w3-padding-64 portfolio-border">
       <h2 class="w3-center">Birthday Tracker <i class="fa fa-github w3-hover-opacity" onclick="window.location.href='https://github.com/rmiyahara/BirthdayTracker'"></i></h2>
-      <p class="w3-center"><img src="noduines.png" style="width:450px;height:450px;" class="w3-image img-responsive w3-center"></p>
+      <p class="w3-center"><img src="./Photos/Portfolio/kyodo.jpeg" style="width:450px;height:450px;" class="w3-image img-responsive w3-center"></p>
 
       <p class="w3-center">January 2018 - February 2018</p>
-      <p>[REPORT]</p>
+      <p class = "w3-padding">Technology Used: Python, Windows Batch Scripting</p>
+      <p class = "w3-padding">
+        This project is a short Python script which includes a list of birthdays and corresponding names. When the script is run, it notifies the user which birthday is either today 
+        or coming soon. The idea for this program came to me while I was learning Python. During this time, I held a leadership position for UCLA's Kyodo Taiko, a 
+        <a href = "https://en.wikipedia.org/wiki/Taiko" target = "_blank">Taiko</a> performance group. One of the responsibilities of this position was to acknowledge each member's 
+        birthday. At the time, I didn't really have a system to do this. I would check the roster everyday which became very tedious over the course of the year. I used this as an 
+        oppertunity to apply Python to my everyday life.
+      </p>
+      <p class = "w3-padding">
+        While this solution worked, I still had to remember to run it everyday. Luckily for me, I had just finished my unit in Linux Bash Scripting in class. I applied what I had 
+        learned with a few changes since I was working with Windows this time around to get the script to run each time I booted my computer. After I got this to work, I could 
+        finally stop worrying about missing a birthday for the rest of my term.
+      </p>
+      <p class = "w3-padding">The code can be found <a href = "https://github.com/rmiyahara/BirthdayTracker" target = "_blank">here</a> or by clicking the GitHub icon at the title.</p>
     </div>
   </div>
 
@@ -251,20 +319,23 @@ body {
         <p>rmiyahara144@gmail.com</p>
       </div>
     </a>
-
-    <div class="w3-third w3-grey w3-hover-opacity" onclick = "copyToClipboard()">
+    <div class="w3-third w3-grey w3-hover-opacity" onclick = "copyStringToClipboard('4085285455')">
       <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
       <p>(408)528-5455</p>
-      <script>
-        function copyToClipboard() {
-          var phone = 4085285455;
-          phone.select();
-          document.execCommand("copy");
-          alert("Phone number has been copied to clipboard!");
-        }
-      </script>
     </div>
-
+    <script>
+      function copyStringToClipboard (str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {position: 'absolute', left: '-9999px'};
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        alert("Phone number has been copied to the clipboard!");
+      }
+    </script>
     <a href = "./Resume.pdf" download target = "_blank">
       <div class = "w3-third w3-teal w3-hover-opacity">
         <p><i class = "fa fa-download w3-xxlarge w3-text-white"></i></p>
@@ -275,7 +346,10 @@ body {
 
 <!-- End page content -->
 <div>
-   <div class="w3-white w3-center" style="width: 102%; height: 50%">CSS created by <a href="https://www.w3schools.com/w3css/w3css_references.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+   <div class="w3-white w3-center" style="width: 102%; height: 50%">CSS created by 
+    <a href="https://www.w3schools.com/w3css/w3css_references.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css
+    </a>
+  </div>
 </div>
 
 <script>
